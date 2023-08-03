@@ -12,7 +12,7 @@ Cone Slalom,Ice Valley
 Tower of Doom
 45
 Sloped Madness,Street Dodge
-45 30
+15 30
 Finish
 70
 Finish

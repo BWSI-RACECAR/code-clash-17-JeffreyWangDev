@@ -79,6 +79,7 @@ class Graph(object):
         return self.graph[node1][node2]
 
 def go(graph:Graph,start,l,a):
+    
     if start == "Finish":
         return 0
     if l == 0:
@@ -90,7 +91,8 @@ def go(graph:Graph,start,l,a):
         if temp < min:
             min = temp
             mina = i
-    return min + graph.value(start,i)
+    a.append(mina)
+    return min + graph.value(start,i)-1
 
 class Solution:
     
@@ -101,7 +103,8 @@ class Solution:
         all = []
         a = go(graph,start_node,len(graph.get_nodes()),all)
         print(a)
-        return all,a
+        print(all)
+        return all,a+1
     
     
 def main():
@@ -123,5 +126,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
