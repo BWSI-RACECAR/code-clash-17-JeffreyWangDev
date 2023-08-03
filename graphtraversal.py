@@ -91,8 +91,8 @@ def go(graph:Graph,start,l,a):
         if temp < min:
             min = temp
             mina = i
+            print(min)
     a.append(mina)
-    print(min + graph.value(start,i))
     return min + graph.value(start,i)
 
 class Solution:
