@@ -84,13 +84,12 @@ def go(graph:Graph,start,l,a):
     if l == 0:
         return sys.maxsize
     min = sys.maxsize
-    mina = ""
+    mina= ""
     for i in graph.get_outgoing_edges(start):
         temp = go(graph,i,l-1,a)
         if temp < min:
             min = temp
             mina = i
-    a.append(mina)
     return min + graph.value(start,i)
 
 class Solution:
@@ -102,7 +101,6 @@ class Solution:
         all = []
         a = go(graph,start_node,len(graph.get_nodes()),all)
         print(a)
-        print(all)
         return all,a
     
     
