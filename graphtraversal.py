@@ -83,7 +83,7 @@ def go(graph:Graph,start,l,a):
         return 0
     if l == 0:
         return sys.maxsize
-    min = 100000
+    min = sys.maxsize
     mina = ""
     for i in graph.get_outgoing_edges(start):
         temp = go(graph,i,l-1,a)
@@ -104,6 +104,8 @@ class Solution:
         print(a)
         print(all)
         return all,a
+    
+    
 def main():
     tc1 = Solution()
     in_graph = {}
