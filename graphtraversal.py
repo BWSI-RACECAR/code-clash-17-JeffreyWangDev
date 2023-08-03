@@ -91,7 +91,6 @@ def go(graph:Graph,start,l,a):
         if temp < min:
             min = temp
             mina = i
-            print(min)
     a.append(mina)
     return min + graph.value(start,i)
 
@@ -104,6 +103,8 @@ class Solution:
         all = []
         a = go(graph,start_node,len(graph.get_nodes()),all)
         print(a)
+        print(a-10)
+        print(a-15)
         return all,a
     
     
