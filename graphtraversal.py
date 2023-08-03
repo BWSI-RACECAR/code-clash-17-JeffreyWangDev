@@ -92,7 +92,7 @@ def go(graph:Graph,start,l,a):
             min = temp
             mina = i
     a.append(mina)
-    return min + graph.value(start,i)-1
+    return min + graph.value(start,i)
 
 class Solution:
     
@@ -104,7 +104,7 @@ class Solution:
         a = go(graph,start_node,len(graph.get_nodes()),all)
         print(a)
         print(all)
-        return all,a+1
+        return all,a
     
     
 def main():
