@@ -102,8 +102,8 @@ class Solution:
         #return type: int
         all = []
         a = go(graph,start_node,len(graph.get_nodes()),all)
-        print(a-10)
-        print(a-20)
+        print(a-5)
+        print(a-15)
         return all,a
     
 def main():
