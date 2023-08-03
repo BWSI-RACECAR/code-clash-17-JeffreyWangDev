@@ -102,11 +102,9 @@ class Solution:
         #return type: int
         all = []
         a = go(graph,start_node,len(graph.get_nodes()),all)
-        print(a)
         print(a-10)
-        print(a-15)
+        print(a-20)
         return all,a
-    
     
 def main():
     tc1 = Solution()
